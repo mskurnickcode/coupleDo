@@ -1,0 +1,15 @@
+1. get input string
+2. count total string length
+3. count the total number of words 
+    count the number of spaces
+4. count the total number of sentences
+    count the number of ?!. in the strings
+5. use the numbers from above to calculate in the index formula
+6. Use switch to put the calculated index into a print answer of grade level
+
+
+
+formula
+index = 0.0588 * L - 0.296 * S - 15.8
+L = average number of letters per 100 words
+S = average number of sentences per 100 words

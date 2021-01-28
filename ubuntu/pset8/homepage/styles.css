@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #6633ff;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  color: blue;
+}
+.nav .name {
+  display: none;
+  color: blue;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+  color: blue;
+}
+.nav a {
+  transition: all .5s;
+  color: blue;
+}
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+header {
+  line-height: 1.5;
+}
+header .profile-image {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+.tag {
+  background-color: blue;
+  color: black;
+  padding: 25px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.location {
+  background-color: #222;
+  color: white;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.card:hover {
+  border-color: #ff99ff;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:hover {
+  transform: scale(1.25);
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 40px 20px;
+}
+
+footer .copyright {
+  padding: 20px 40px 20px;
+  top: -8px;
+  font-size: .75em;
+  text-align:center;
+  display: inline-block;
+}
+
+footer ul {
+  margin: 10;
+  padding: 25;
+  display: inline-block;
+}
+
+footer ul li {
+  padding: 20px 40px 20px;
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+.twitter {
+  background-image: url(images/twitter.svg);
+}
+.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+
+  .flex {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 450px;
+  }
+
+  .nav {
+    max-width: 1200px;
+
+  }
+
+  .nav .name {
+    display: block;
+    margin-right: auto;
+    color: blue;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align:center;
+    display: inline;
+  }
+
+}
+
+h3 {
+color: red;
+  letter-spacing: 5px;
+
+
+}
+
+.card-title {
+text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+}
+
+.submit {
+  padding-top: 100px;
+  max-width: 500px;
+  display: inline;
+  text-align: center;
+  border-radius: 6px;
+}
+
+buttons {
+  margin-top:100px;
+  padding-top: 100px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.below-nav {
+  text-align: center;
+  padding-top: 100px ;
+}
+
+.experience {
+   background-color: #FFDC00;
+  margin: 25px;
+  padding: 20px 40px 20px;
+  border: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+

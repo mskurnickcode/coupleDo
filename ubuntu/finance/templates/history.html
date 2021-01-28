@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="data">
+        <h1>History</h1>
+            <div>Current Balance: ${{ cash }}</div>
+                 <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Stock</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Share Price</th>
+                          <th scope="col">Action Type</th>
+                          <th scope="col">Time</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            {% for i in history %}
+                                <td> {{ i.ticker.upper() }} </td>
+                                <td> {{ i.quantity }} </td>
+                                <td> {{ i.price }} </td>
+                                <td> {{ i.buy_sell }} </td>
+                                <td> {{ i.date_time }} </td>
+                            </tr>
+                            {% endfor %}
+                      </tbody>
+                    </table>
+
+    </div>
+{% endblock %}
+

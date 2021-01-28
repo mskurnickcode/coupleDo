@@ -1,0 +1,4 @@
+1. get cyper key digit and store it
+2. get and store plain text string
+3. loop over each character in the plaintext string with the cypher key
+4. print the cypher text

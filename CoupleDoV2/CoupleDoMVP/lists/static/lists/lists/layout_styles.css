@@ -1,0 +1,66 @@
+.body-area {
+  position: relative;
+  height: auto;
+  min-height: 92% !important;
+}
+
+.titleArea {
+  font-style: italic;
+}
+
+.container {
+  max-width: 95%;
+}
+
+#registerForm {
+  max-width: 75%;
+}
+
+.card-body {
+  background-color: lightgray;
+}
+
+li {
+  font-size: large;
+}
+
+footer {
+  color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.description {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:800px) {
+  .column {
+  width: 100%;
+  }
+}
+

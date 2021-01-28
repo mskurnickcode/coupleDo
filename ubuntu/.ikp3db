@@ -1,0 +1,6 @@
+IKP3db - g 20:09:25,843948 - INFO - IKP3db 1.4 - Inouk Python Debugger for CPython 3.6+
+IKP3db - g 20:09:25,844136 - INFO - IKP3db listening on 127.0.0.1:15472
+IKP3db - g 20:09:26,228471 - INFO - Connected with 127.0.0.1:34312
+IKP3db - g 20:09:26,270606 - WARNING - IKP3db 1.4.1 is available on pypi.
+IKP3db - g 20:09:30,928842 - INFO - Uncaught exception. Entering post mortem debugging
+IKP3db - g 20:10:19,024378 - INFO - Post mortem debugger finished.

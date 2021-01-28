@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+padding: 25px;
+}
+
+.center {
+  background-color: #FFDC00;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn-group {
+  padding-top: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.answer {
+  padding-top: 30px;
+  font-weight: bold;
+}
+
+.compAnswer {
+  padding-top: 15px;
+}
+
+.media {
+  height: 75px;
+  width: 75px;
+}
+
+.resultBox {
+  float: inline;
+  background-color:	#DCDCDC;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 350px;
+  text-align: center;
+}
+
+

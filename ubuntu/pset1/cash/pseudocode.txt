@@ -1,0 +1,15 @@
+1. Ask for amount of change needed
+2. Save amount of change
+3. Check how many quarters can be used
+4. check how many dimes can used from what's left
+5. Check how many nickels can be used from what's left
+6. Check how many pennies can be used from what's left
+7. Count and return how many coins were used
+
+
+Simplified
+1. Get amount of change
+2. Subtract number of:
+    Quarters, then dimes, then nickels, then pennies
+    Stop at 0
+Return number of quarters

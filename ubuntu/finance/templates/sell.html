@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+
+
+    <form action="/sell" method="post">
+        <div class="form-group">
+            <select name="stock" id="selector">
+                <option value="initial" selected>Please Select from Portfolio</option>
+                {% for i in portfolio['current'] %}
+                    <option value="{{ i.ticker }}">{{ i.ticker.upper() }} : {{ i.quantity }} Shares : {{i.current}} Price per Share</option>
+                {% endfor %}
+            </select>
+            <input autocomplete="off" autofocus class="form-control" name="amount" placeholder="Quantity" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% endblock %}

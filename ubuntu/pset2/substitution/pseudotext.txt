@@ -1,0 +1,11 @@
+1. get cypher in command line
+2. check that the cypher is 26 letters long.
+    If not print error message and return 1
+3. check the the cypher has only characters in it
+    if not print error message and return 1
+4. get plaintext
+5. Loop over plaintext and print as cypher
+    if uppercase use uppercase cypher
+    if lower case use lower case cypher
+    if non alpha keep it as it is
+6. return from main with 0

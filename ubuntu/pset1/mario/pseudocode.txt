@@ -1,0 +1,7 @@
+1. run program
+2. Prompt user for input
+3. check if input is between 1-8
+    if between 1-8 continue
+    ELSE reprompt user
+4. loop through rows from 1 to the given integer
+    stop at the given integer

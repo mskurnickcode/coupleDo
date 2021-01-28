@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <form action= "/add" method = "post">
+        <input id="comment" name="comment" type = "text" placeholder="What do you think?">
+        <input id="submit" type = "submit" disabled>
+    </form>
+
+    <script>
+        document.querySelector('#comment').onkeyup = function() {
+            if (document.querySelector('#comment').value === '') {
+                document.querySelector('#submit').disabled = true;
+            } else {
+                document.querySelector('#submit').disabled = false;
+            }
+        }
+    </script>
+{% endblock %}

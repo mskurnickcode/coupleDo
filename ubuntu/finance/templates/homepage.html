@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="data">
+        <h1>Portfolio</h1>
+            <div>Current Balance: ${{ cash }}</div>
+                 <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">Ticker</th>
+                          <th scope="col">Quantity</th>
+                          <th scope="col">Share Price</th>
+                          <th scope="col">Total Value</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {% for stock in data['current']: %}
+                            <tr>
+                                <td> {{ stock.ticker.upper() }} </td>
+                                <td> {{ stock.quantity }} </td>
+                                <td> {{ stock.current }} </td>
+                                <td> {{ stock.current * stock.quantity }} </td>
+
+                            </tr>
+                        {% endfor %}
+                      </tbody>
+                    </table>
+    </div>
+{% endblock %}

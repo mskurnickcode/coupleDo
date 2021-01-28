@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<div class="card" align= "center" style="width: 18rem; ">
+  <div class="card-body">
+    <h5 class="card-title">Quote</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{ data['name']}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ data['price']}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">{{ data['symbol']}}</h6>
+  </div>
+</div>
+{% endblock %}

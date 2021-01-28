@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link href="static/css_image/styles.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <div class= "center">
+            <div class="title">
+                <h1>Leader Board</h1>
+            </div>
+                <ol>
+                    {% for leader in leaders %}
+                        <li>{{ leader["name"] }}: {{ leader["score"]}}</li>
+                    {% endfor %}
+            </ol>
+            </div>
+        </div>

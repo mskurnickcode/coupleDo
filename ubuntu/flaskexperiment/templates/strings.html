@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+    {% block body %}
+        <h1> Comments </h1>
+            <ul>
+            {% for string in strings %}
+                <li>{{ string }}</li>
+            {% endfor %}
+            </ul>
+        <a href= "/add">Create a New Comment?</a>
+
+    {% endblock %}

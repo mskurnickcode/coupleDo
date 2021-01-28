@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link href="styles.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="resultBox">
+            <h4>Results:</h4>
+            <p id ="win">...</p>
+            <p id ="winCount">0</p>
+            <form action= "/index" method = "post">
+                <input id="name" name="name" type = "text" placeholder="What's Your Name?">
+                <input id="submit" type = "submit">
+            </form>
+        </div>
+        <div class= "center">
+            <div class="title">
+                <h1>Let's Play Rock Paper Scissors</h1>
+            </div>
+            <div id= "btn-grp" class="btn-group" role="group" aria-label="Basic example">
+                <button id="rock" type="button" class="btn btn-secondary">Rock</button>
+                <button id="paper" type="button" class="btn btn-secondary">Paper</button>
+                <button id="scissors" type="button" class="btn btn-secondary">Scissors</button>
+            </div>
+            <div class="answer">
+                <p>You Picked:</p><p id= "answer"> "..." </p>
+                <p class = "compAnswer"> The computer chose: </p>
+                <p id= "compAnswer"></p>
+            </div>
+        </div>
+        <script src="rps.js"></script>
+    </body>

@@ -1,0 +1,15 @@
+1. Implement look ups for current prices on index and sell
+2. In history, figure out hot to change 1/0 to buy and sell
+
+export API_KEY=pk_d2f95ab34d854b2e9e22c00688e4a078
+API Key= pk_d2f95ab34d854b2e9e22c00688e4a078
+
+INSERT INTO buy (user_id, ticker, price, quantity, 'date time') VALUES (1, 'NFLX', 10.00, 3, 102);
+
+CREATE TABLE IF NOT EXISTS 'users' ('id' INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, 'username' TEXT NOT NULL, 'hash' TEXT NOT NULL, 'cash' NUMERIC NOT NULL DEFAULT 10000.00 );
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE UNIQUE INDEX 'username' ON "users" ("username");
+CREATE TABLE IF NOT EXISTS 'user_stocks' ('user_id' INTEGER NOT NULL, 'ticker' TEXT NOT NULL, 'price' REAL NOT NULL, 'quantity' INTEGER NOT NULL);
+CREATE TABLE IF NOT EXISTS 'history' ('action_id' INTEGER PRIMARY KEY, 'user_id' INTEGER NOT NULL, 'ticker' TEXT NOT NULL, 'price' REAL NOT NULL, 'quantity' INTEGER NOT NULL, 'action' INTEGER NOT NULL, 'date_time' INTEGER NOT NULL);
+
+ALTER TABLE history RENAME COLUMN date time TO date_time;
